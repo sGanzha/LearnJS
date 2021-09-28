@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         Создайте объект calculator (калькулятор) с тремя методами:
+
+// read() (читать) запрашивает два значения и сохраняет их как свойства объекта.
+// sum() (суммировать) возвращает сумму сохранённых значений.
+// mul() (умножить) перемножает сохранённые значения и возвращает результат.
+// let calculator = {
+//   // ... ваш код ...
+// };
+
+// calculator.read();
+// alert( calculator.sum() );
+// alert( calculator.mul() );
+
+const calculator ={
+    read(){
+        calculator.x= +prompt('x');
+        calculator.y=+prompt('y');
+    } ,
+    sum(){
+        return calculator.x+calculator.y;
+    },
+    mul(){
+        return calculator.x*calculator.y;
+    }
+}
+
+calculator.read();
+console.log(calculator.sum());
+console.log(calculator.mul());
+console.dir(calculator);
+
+    </script>
+</body>
+</html>
